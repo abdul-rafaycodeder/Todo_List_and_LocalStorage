@@ -1,24 +1,21 @@
-// console.log(window.localStorage.length)
-
 // const object = {
 //     firsName: 'ali',
-//     lastName: 'khan'
+//     age: 40
 // }
 
-// // let myName = 'abdul rafay'
-// var local = localStorage.setItem('name', object)
-
 // var string = JSON.stringify(object);
+// localStorage.setItem("name", string);
+// console.log(string) 
 
-console.log(string)
-console.log(local)
+//----------==> Store value useing prompt <==------------//
 
-var obj = {
-  uname: "ali",
-  age: 20,                                  
-};
-var objInString = JSON.stringify(obj);
-localStorage.setItem("object", objInString);
+var key = prompt('enter your kay name');
+var value = prompt('enter your value');
 
-var getObjectInString = localStorage.getItem("object"); //in string
-console.log("getObjectInString",getObjectInString) // in string
+let local = localStorage.setItem(key, value);
+
+console.log(`this is a Key==> ${key} this is a value==> ${localStorage.getItem(key)}`)
+
+if(key == "white" || key == "blue"){
+    localStorage.removeItem(key)
+}
