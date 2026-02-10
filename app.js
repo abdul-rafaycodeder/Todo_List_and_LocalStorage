@@ -1,10 +1,24 @@
-// console.log(window.localStorage)
+// console.log(window.localStorage.length)
 
-const obj = {
-    firsName: 'ali',
-    lastName: 'khan'
-}
+// const object = {
+//     firsName: 'ali',
+//     lastName: 'khan'
+// }
 
-var setData = localStorage.setItem('value', obj)
+// // let myName = 'abdul rafay'
+// var local = localStorage.setItem('name', object)
 
-console.log(setData)
+// var string = JSON.stringify(object);
+
+console.log(string)
+console.log(local)
+
+var obj = {
+  uname: "ali",
+  age: 20,                                  
+};
+var objInString = JSON.stringify(obj);
+localStorage.setItem("object", objInString);
+
+var getObjectInString = localStorage.getItem("object"); //in string
+console.log("getObjectInString",getObjectInString) // in string
