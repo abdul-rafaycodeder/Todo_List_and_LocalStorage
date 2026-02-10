@@ -35,3 +35,15 @@ btn.addEventListener('click', function (){
 
 //---------------==> Store Value Useing Todo-list <==-----------------//
 
+const testInput = document.getElementById('taskInput');
+const addTaskButton = document.getElementById('addTaskButton');
+const list = document.getElementById('taskList');
+
+addTaskButton.addEventListener('click', function (){
+    const inputValue = testInput.value;
+    const li = document.createElement('li');
+    li.textContent = inputValue;
+    console.log('li==>',li)
+    console.log("inputValue",inputValue)
+})
+
