@@ -27,10 +27,10 @@
 const input = document.getElementById('input');
 const btn = document.getElementById('button');
 
-btn.addEventListener('click', function (){
+btn.addEventListener('click', function () {
     const fullValue = input.value
     localStorage.setItem('key', fullValue)
-    console.log("fullValue==>",fullValue)
+    console.log("fullValue==>", fullValue)
 })
 
 //---------------==> Store Value Useing Todo-list <==-----------------//
@@ -39,11 +39,29 @@ const testInput = document.getElementById('taskInput');
 const addTaskButton = document.getElementById('addTaskButton');
 const list = document.getElementById('taskList');
 
-addTaskButton.addEventListener('click', function (){
+addTaskButton.addEventListener('click', function () {
     const inputValue = testInput.value;
     const li = document.createElement('li');
     li.textContent = inputValue;
-    console.log('li==>',li)
-    console.log("inputValue",inputValue)
+    // console.log('li==>', li)
+    // console.log("inputValue", inputValue)
+    list.appendChild(li)
+    saveLocalData(inputValue)
 })
 
+function saveLocalData(inputValue) {
+    const todoData = JSON.parse(localStorage.setItem("todo") || []);
+    todoData.push(inputValue);
+    localStorage.setItem("todo", JSON.stringify(todoData))
+}
+function getTodoData() {
+    var gettodo = JSON.parse(localStorage.getItem("todo")) || [];
+
+    gettodo.forEach((todo) => {
+        var li = document.createElement("li");
+        li.textContent = todo;
+        list.appendChild(li);
+    });
+}
+
+getData();
