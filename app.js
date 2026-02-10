@@ -27,3 +27,11 @@
 const input = document.getElementById('input');
 const btn = document.getElementById('button');
 
+btn.addEventListener('click', function (){
+    const fullValue = input.value
+    localStorage.setItem('key', fullValue)
+    console.log("fullValue==>",fullValue)
+})
+
+//---------------==> Store Value Useing Todo-list <==-----------------//
+

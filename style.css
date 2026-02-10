@@ -9,7 +9,7 @@ body {
 }
 
 #center {
-    margin-top: 10vw;
+    margin-top: 3vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +22,7 @@ body {
     border: none;
     border-radius: 10px;
     width: 30vw;
+    margin-right: 10px;
 }
 
 #center #button {
