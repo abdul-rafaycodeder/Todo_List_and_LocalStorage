@@ -6,7 +6,10 @@
 
 body {
     background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* -----------------==> Store Value Useing Input <==------------------ */
 
 #center {
     margin-top: 3vw;
@@ -26,6 +29,40 @@ body {
 }
 
 #center #button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(237, 237, 237);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+/*-----------------==> Store Value Useing Todo-list <==-------------------*/
+
+h1 {
+    margin-bottom: 15px;
+}
+
+#main-style {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#main-style #taskInput {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 30vw;
+    margin-right: 10px;
+}
+
+#main-style #addTaskButton {
     padding: 10px 20px;
     font-size: 20px;
     background-color: rgb(237, 237, 237);
