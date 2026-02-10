@@ -7,14 +7,23 @@
 // localStorage.setItem("name", string);
 // console.log(string) 
 
-//----------==> Store value useing prompt <==------------//
-
-var key = prompt('enter your kay name');
-var value = prompt('enter your value');
-
-localStorage.setItem(key, value);
+//---------------==> Store value useing prompt <==-----------------//
 
 
-if (key == "white" || key == "blue"){
-    localStorage.removeItem(key)
-}
+// let key = prompt('enter your kay name');
+// let value = prompt('enter your value');
+
+// localStorage.setItem(key, value);
+
+// if (value == "red" || value == "blue"){
+//     localStorage.removeItem(key)
+// }
+
+// console.log(`this is a Key==> ${key} this is a value==> ${localStorage.getItem(key)}`)
+
+
+//---------------==> Store Value Useing Input <==-----------------//
+
+const input = document.getElementById('input');
+const btn = document.getElementById('btn');
+
