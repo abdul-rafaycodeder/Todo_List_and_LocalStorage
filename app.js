@@ -101,3 +101,44 @@
 // getTodoData();
 
 
+// javascript tast
+
+
+// Write a program to print ever number from array, var arr [1,2,3,4,5,6,7] resilt = 
+const array = [1, 2, 3, 4, 5, 6, 7];
+
+for (let i = 0; i < array.length; i++) {
+
+    if (array[i] % 2 == 0) {
+        console.log(array[i])
+    }
+}
+
+
+var obj = {
+    userName: 'abdul rafay',
+    age: 50,
+    userData: function () {
+        return `${this.userName} ${this.age}`
+    }
+}
+console.log(obj.userData())
+
+const list = document.getElementById("list");
+
+const listItems = `<li>rafay</li><li>rafay</li>`
+
+list.prepend(listItems);
+
+
+for (let i = 10; i >= 1; i--) {
+
+    var check = `5 * ${i} = ${5 * i} <br>`;
+    document.writeln(check)
+}
+
+var list2 = document.getElementById('list2');
+var clearButton = document.getElementById('clearButton');
+
+
+
