@@ -9,83 +9,34 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
-
+span{
+    color: red;
+}
 /* -----------------==> Store Value Useing Input <==------------------ */
 
-#center {
-    margin-top: 3vw;
+#inputDiv{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#center #input {
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    font-size: 20px;
+#inputDiv input{
+    padding: 10px;
+    width: 300px;
+    font-size: 18px;
     border: none;
-    border-radius: 10px;
-    width: 30vw;
-    margin-right: 10px;
-}
+    border-radius: 5px;
+}   
 
-#center #button {
+#inputDiv button{
     padding: 10px 20px;
-    font-size: 20px;
-    background-color: rgb(237, 237, 237);
-    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    font-size: 18px;
     border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
     cursor: pointer;
-    border: none;
-    border-radius: 10px;
 }
 
-/*-----------------==> Store Value Useing Todo-list <==-------------------*/
-
-h1 {
-    margin-bottom: 15px;
-    color: white;
-}
-
-#main-style {
-    border-radius: 10px;
-    border: none;
-    text-align: center;
-    margin: 20px auto;
-}
-
-#main-style #taskInput {
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    width: 30vw;
-    margin-right: 10px;
-}
-
-#main-style #addTaskButton {
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: rgb(237, 237, 237);
-    color: rgb(0, 0, 0);
-    border: none;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px auto;
-    width: 40vw;
-    font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.class{
-    color: rgb(0, 0, 0);
-}

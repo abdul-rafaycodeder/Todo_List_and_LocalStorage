@@ -21,14 +21,15 @@ localStorage.setItem("myObject", stringifiedObj)
 
 // //---------------==> Store Value Useing Input <==-----------------//
 
-const input = document.getElementById('input');
-const btn = document.getElementById('button');
+let input = document.getElementById('input');
+let btn = document.getElementById('button');
+let span = document.getElementById('span');
 
-btn.addEventListener('click', function () {
-    const fullValue = input.value
-    localStorage.setItem('key', fullValue)
-    console.log("fullValue==>", fullValue)
-    
+btn.addEventListener('click', function(){
+    let inputValue = input.value;
+    localStorage.setItem('key', inputValue)
+    let spanValue = localStorage.getItem(inputValue);
+    span.innerText = spanValue;
 })
 
 // //---------------==> Store Value Useing Todo-list <==-----------------//
