@@ -1,11 +1,11 @@
 //---------------==> How to store data in local Storage <==-----------------//
 
-let obj = {
-    name: "rafay",
-    age: 50,
-}
-var stringifiedObj = JSON.stringify(obj);
-localStorage.setItem("myObject", stringifiedObj)
+// let obj = {
+//     name: "rafay",
+//     age: 50,
+// }
+// var stringifiedObj = JSON.stringify(obj);
+// localStorage.setItem("myObject", stringifiedObj)
 
 //---------------==> Store value using prompt <==-----------------//
 
@@ -25,11 +25,16 @@ let input = document.getElementById('input');
 let btn = document.getElementById('button');
 let span = document.getElementById('span');
 
-btn.addEventListener('click', function(){
+btn.addEventListener('click', function () {
     let inputValue = input.value;
-    localStorage.setItem('key', inputValue)
-    let spanValue = localStorage.getItem(inputValue);
-    span.innerText = spanValue;
+    localStorage.setItem('key', inputValue);
+    span.textContent = inputValue;
+
+})
+
+window.addEventListener('load', function () {
+    let getValue = localStorage.getItem('key');
+    span.textContent = getValue;
 })
 
 // //---------------==> Store Value Useing Todo-list <==-----------------//
@@ -49,7 +54,7 @@ btn.addEventListener('click', function(){
 // // })
 
 // // function saveLocalData(inputValue) {
-// //     const todoData = JSON.parse(localStorage.setItem("todo") || []);
+// //     const todoData = JSON.parse(localStorage.getItem("todo") || "[]");
 // //     todoData.push(inputValue);
 // //     localStorage.setItem("todo", JSON.stringify(todoData))
 // // }
