@@ -9,9 +9,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
-span{
-    color: red;
+h1{
+    color: rgb(255, 255, 255);
     text-align: center;
+    margin-bottom: 20px;
 }
 /* -----------------==> Store Value Useing Input <==------------------ */
 
@@ -19,7 +20,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #inputDiv input{
