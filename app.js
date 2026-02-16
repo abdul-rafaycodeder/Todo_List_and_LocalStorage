@@ -150,3 +150,17 @@
 //     callback(name);
 // }
 
+// function addNumbers(a, b) {
+//     return a + b;
+// }
+// console.log(addNumbers(5, 3)) 
+
+function name(a, b, callback) {
+    console.log(a + b);
+    callback(1, 4)
+}
+
+function callback(a, b) {
+    return a - b
+}
+name()
